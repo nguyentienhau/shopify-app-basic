@@ -1,0 +1,26 @@
+{
+	"name": "shopify-app-basic",
+	"version": "1.0.0",
+	"author": "Nguyen Tien Hau",
+	"description": "Shopify App Basic Project",
+	"license": "ISC",
+	"main": "./src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "shopify app dev",
+		"deploy": "shopify app deploy",
+		"env:pull": "shopify app env pull",
+		"env:show": "shopify app env show",
+		"generate:extension": "shopify app generate extension",
+		"config:link": "shopify app config link",
+		"config:use": "shopify app config use",
+		"format:check": "prettier . --check",
+		"format:fix": "prettier . --write"
+	},
+	"dependencies": {
+		"@shopify/cli": "^3.64.1"
+	},
+	"devDependencies": {
+		"prettier": "^3.3.3"
+	}
+}

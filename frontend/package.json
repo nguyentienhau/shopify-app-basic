@@ -2,11 +2,13 @@
 	"name": "frontend",
 	"version": "1.0.0",
 	"author": "Nguyen Tien Hau",
-	"license": "ISC",
 	"description": "Shopify App Frontend",
+	"license": "ISC",
 	"main": "src/index.jsx",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "webpack configtest",
+		"dev": "webpack serve --mode development",
+		"build": "webpack --mode production",
 		"lint:check": "eslint **/*.{js,jsx,ts,tsx}",
 		"lint:fix": "eslint **/*.{js,jsx,ts,tsx} --fix"
 	},

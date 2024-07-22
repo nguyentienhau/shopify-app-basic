@@ -7,7 +7,7 @@
 	"main": "./src/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "shopify app dev",
+		"dev": "shopify app dev --skip-dependencies-installation",
 		"deploy": "shopify app deploy",
 		"env:pull": "shopify app env pull",
 		"env:show": "shopify app env show",
@@ -17,10 +17,8 @@
 		"format:check": "prettier . --check",
 		"format:fix": "prettier . --write"
 	},
-	"dependencies": {
-		"@shopify/cli": "^3.64.1"
-	},
 	"devDependencies": {
+		"@shopify/cli": "^3.64.1",
 		"prettier": "^3.3.3"
 	}
 }

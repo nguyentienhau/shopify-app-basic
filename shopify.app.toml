@@ -3,10 +3,11 @@
 client_id = "57906e9ee9550897532e21b094e6eb3f"
 name = "HauNT Basic App"
 handle = "haunt-basic-app"
-application_url = "https://shopify.dev/apps/default-app-home"
+application_url = "https://status-goal-impose-recipients.trycloudflare.com"
 embedded = true
 
 [build]
+automatically_update_urls_on_dev = true
 dev_store_url = "haunt-super-store.myshopify.com"
 include_config_on_deploy = true
 
@@ -15,7 +16,11 @@ include_config_on_deploy = true
 scopes = "read_customers,read_gift_cards,read_orders,read_products,write_customers,write_gift_cards,write_orders,write_products"
 
 [auth]
-redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+redirect_urls = [
+  "https://status-goal-impose-recipients.trycloudflare.com/auth/callback",
+  "https://status-goal-impose-recipients.trycloudflare.com/auth/shopify/callback",
+  "https://status-goal-impose-recipients.trycloudflare.com/api/auth/callback"
+]
 
 [webhooks]
 api_version = "2024-07"

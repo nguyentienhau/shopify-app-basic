@@ -30,7 +30,7 @@
 				"strings": true,
 				"identifiers": true,
 				"lang": "en_US",
-				"skipWords": ["dict", "bool", "utils"],
+				"skipWords": ["dict", "bool", "utils", "webpack", "jsx", "tsx"],
 				"skipIfMatch": ["http://[^s]*"],
 				"skipWordIfMatch": ["^foobar.*$"],
 				"minLength": 3

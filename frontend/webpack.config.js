@@ -1,6 +1,16 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
+const frontendConfig = {
+	host: "localhost",
+	port: "3000",
+};
+
+if (process.env.HOST) {
+	frontendConfig.host = process.env.HOST.replace(/https?:\/\//, "");
+	frontendConfig.port = process.env.FRONTEND_PORT;
+}
+
 module.exports = function (env, argsObject) {
 	return {
 		entry: "./src/index.jsx",
@@ -13,8 +23,7 @@ module.exports = function (env, argsObject) {
 			static: {
 				directory: "public",
 			},
-			port: 5000,
-			open: true,
+			...frontendConfig,
 			historyApiFallback: true,
 		},
 		resolve: {

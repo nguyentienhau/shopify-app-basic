@@ -3,7 +3,7 @@
 client_id = "57906e9ee9550897532e21b094e6eb3f"
 name = "HauNT Basic App"
 handle = "haunt-basic-app"
-application_url = "https://status-goal-impose-recipients.trycloudflare.com"
+application_url = "https://society-website-confused-designated.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_customers,read_gift_cards,read_orders,read_products,write_custome
 
 [auth]
 redirect_urls = [
-  "https://status-goal-impose-recipients.trycloudflare.com/auth/callback",
-  "https://status-goal-impose-recipients.trycloudflare.com/auth/shopify/callback",
-  "https://status-goal-impose-recipients.trycloudflare.com/api/auth/callback"
+  "https://society-website-confused-designated.trycloudflare.com/auth/callback",
+  "https://society-website-confused-designated.trycloudflare.com/auth/shopify/callback",
+  "https://society-website-confused-designated.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
